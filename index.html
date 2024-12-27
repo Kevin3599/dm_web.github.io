@@ -169,11 +169,15 @@
 -->
 <!-- BANNER -->
 
+<section class="intro">
+    <div class="container">
+        <div class="intro-text">
+            <p>DM是一家体育经纪公司。致力于提供全面的篮球服务，涵盖从球员职业管理到体育留学以及AAU篮球项目</p>
+        </div>
+    </div>
+</section>
 
-
-
-
-
+<!-- Our Services section follows -->
 
 		<section class="brands flf">
     <div class="container">
@@ -181,6 +185,7 @@
         <div class="brand-images">
             <img src="images\channels4_profile.jpg" alt="">
             <img src="images\puma.jpg" alt="">
+            <img src="images\微信图片_20241227021627.png" alt="">
         </div>
     </div>
 </section>
@@ -489,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				$('nav ul li a, a.logo').click(function(event){
 					event.preventDefault();
 					var target = $(this).attr('href');
-					$('html,body').animate({scrollTop: ($(target).offset().top-50)}, 'slow');
+					$('html,body').animate({scrollTop: ($(target).offset().top-50)}, 'low');
 					var getwindowwidth = $(window).width();
 					if(getwindowwidth < 1200){
 						$('nav').removeClass('active');

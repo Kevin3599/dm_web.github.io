@@ -38,8 +38,9 @@ header a.logo img {
 
 .menucontrols a {
     float: left;
-    width: 4vw; height: 4vw;
-    background: #f0eeee; /* 统一为橙色 */
+    width: 4vw; 
+    height: 4vw;
+    background: transparent; /* 将背景改为透明 */
     color: #000;
     font-size: 1.4vw;
 }

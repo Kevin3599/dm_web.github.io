@@ -165,10 +165,11 @@
 <!-- BANNER -->
 
 <!-- 在视频部分后，Our Service 前添加 -->
-<section class="intro">
-    <div class="container">
-        <div class="intro-text">
-            <p>DM是一家体育经纪公司。致力于提供全面的篮球服务，涵盖从球员职业管理到体育留学以及AAU篮球项目</p>
+<section class="intro" style="background: #f8f8f8; padding: 60px 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #333;">DM体育</h2>
+        <div class="intro-text" style="font-size: 1.2em; line-height: 1.6; color: #666; max-width: 800px; margin: 0 auto;">
+            <p>DM是一家专业的体育经纪公司，致力于提供全面的篮球服务，涵盖从球员职业管理到体育留学以及AAU篮球项目</p>
         </div>
     </div>
 </section>
@@ -179,197 +180,120 @@
     </a>
 </div>
 
-		<section class="brands flf">
+<section class="brands" style="background: #fff; padding: 80px 0;">
     <div class="container">
-        <h2>Our Sponsors</h2>
-        <div class="brand-images">
-            <img src="images\channels4_profile.jpg" alt="">
-            <img src="images\puma.jpg" alt="">
-            <img src="images\微信图片_20241227021627.png" alt="">
-        </div>
-    </div>
-
-</section>
-
-<style>
-.brands {
-    padding: 50px 0;
-}
-
-.brands h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.brand-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* 图片之间的间距 */
-}
-
-.brand-images img {
-    max-width: 200px; /* 控制图片大小 */
-    height: auto;
-    object-fit: contain;
-}
-</style>
-		<!-- BRANDS -->
-
-
-
-
-
-
-		<section class="services flf" id="services">
-    <div class="container">
-        <h2>Our services</h2>
-        <h4></h4>
-
-        <div class="servicesitemswrap gallery">
-            <div class="item">
-                <div class="itemcontent">
-                    <div class="thumb carousel-container">
-                        <button class="carousel-button prev" id="prevButton1">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <div id="carousel1" class="carousel">
-                            <img src="DM\DM\images\image1.jpg" alt="AAU Team">
-                        </div>
-                        <button class="carousel-button next" id="nextButton1">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                    <h3>AAU team</h3>
-                    <p style="min-height: 48px;">The only Chinese team in the five major AAU brand leagues in the United States</p>
-                    <div class="button-wrapper" style="text-align: center; margin-top: 55px;">
-                        <a href="split-html/split/index1.html" class="btn">
-                            Learn more <span class="fa-solid fa-angle-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="itemcontent">
-                    <div class="thumb carousel-container">
-                        <button class="carousel-button prev" id="prevButton2">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <div id="carousel2" class="carousel">
-                            <img src="images/微信图片_20241223005536.jpg" alt="DM spots agency">
-                        </div>
-                        <button class="carousel-button next" id="nextButton2">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                    <h3>DM spots agency</h3>
-                    <p style="min-height: 48px;">The mission of DM Sports Agency Limited is to provide talented young people with the opportunity to impact professional athletes and help them achieve Dreams.</p>
-                    <div class="button-wrapper" style="text-align: center; margin-top: 10%;">
-                        <a href="AAUteam.html" class="btn">
-                            Learn more <span class="fa-solid fa-angle-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <h2 style="font-size: 2em; text-align: center; margin-bottom: 50px; color: #333;">合作伙伴</h2>
+        <div class="brand-images" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <img src="images/channels4_profile.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
+            <img src="images/puma.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
+            <img src="images/微信图片_20241227021627.png" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
         </div>
     </div>
 </section>
 
-
 <style>
-.carousel-container {
-    position: relative;
-    width: 100%;
+.brand-images img:hover {
+    transform: scale(1.1);
 }
 
-.carousel {
-    overflow: hidden;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.carousel-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 第一个轮播图的图片数组
-    const carousel1Images = [
-        "images/image1.jpg",
-        "images/image2.jpg",
-        "images/image3.jpg"
-    ];
-    
-    // 第二个轮播图的图片数组
-    const carousel2Images = [
-        "images/微信图片_20241223005536.jpg",
-        "images/微信图片_20241223005607.jpg",
-        "images/微信图片_20241223005538.jpg"
-    ];
-
-    // 轮播图控制函数
-    function setupCarousel(carouselId, prevButtonId, nextButtonId, images) {
-        const carousel = document.getElementById(carouselId);
-        const prevButton = document.getElementById(prevButtonId);
-        const nextButton = document.getElementById(nextButtonId);
-        let currentIndex = 0;
-
-        // 更新图片显示
-        function updateCarousel() {
-            carousel.innerHTML = `<img src="${images[currentIndex]}" alt="Image ${currentIndex + 1}">`;
-        }
-
-        // 上一张按钮事件
-        prevButton.addEventListener("click", function() {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = images.length - 1;
-            }
-            updateCarousel();
-        });
-
-        // 下一张按钮事件
-        nextButton.addEventListener("click", function() {
-            if (currentIndex < images.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0;
-            }
-            updateCarousel();
-        });
-
-        // 初始化显示第一张图片
-        updateCarousel();
+@media (max-width: 768px) {
+    .brand-images {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
     }
+    
+    .intro {
+        padding: 40px 20px;
+    }
+}
+</style>
 
-    // 初始化两个轮播图
-    setupCarousel("carousel1", "prevButton1", "nextButton1", carousel1Images);
-    setupCarousel("carousel2", "prevButton2", "nextButton2", carousel2Images);
-});
-</script>
-
+<style>
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2px;
+		max-width: 1400px;
+		margin: 0 auto;
+		background: #fff;
+	}
+	
+	.grid-item {
+		position: relative;
+		overflow: hidden;
+		aspect-ratio: 1/1;
+	}
+	
+	.grid-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s ease;
+	}
+	
+	.grid-item:hover img {
+		transform: scale(1.05);
+	}
+	
+	.grid-item .content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 20px;
+		background: linear-gradient(transparent, rgba(0,0,0,0.7));
+		color: white;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	
+	.grid-item:hover .content {
+		opacity: 1;
+	}
+	
+	@media (max-width: 768px) {
+		.grid-container {
+			grid-template-columns: 1fr;
+		}
+	}
+	</style>
+	
+	<section class="services">
+		<div class="grid-container">
+			<div class="grid-item">
+				<img src="images/image1.jpg" alt="AAU Team">
+				<div class="content">
+					<h3>AAU team</h3>
+					<p>The only Chinese team in the five major AAU brand leagues</p>
+					<a href="split-html/split/index1.html" class="btn">Learn more</a>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="images/微信图片_20241223005536.jpg" alt="DM Sports Agency">
+				<div class="content">
+					<h3>DM Sports Agency</h3>
+					<p>Professional sports management services</p>
+					<a href="AAUteam.html" class="btn">Learn more</a>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="images/微信图片_20241223005607.jpg" alt="Training">
+				<div class="content">
+					<h3>Professional Training</h3>
+					<p>Customized training programs</p>
+					<a href="#" class="btn">Learn more</a>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="images/微信图片_20241223005538.jpg" alt="Events">
+				<div class="content">
+					<h3>Events</h3>
+					<p>Sports events and competitions</p>
+					<a href="#" class="btn">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 		<!-- SERVICES -->
 
@@ -599,3 +523,90 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <!-- Template By: LayoutFlow, URL: https://layoutflow.com/  -->
+
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.grid-item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .content {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<section class="services">
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="images/image1.jpg" alt="AAU Team">
+            <div class="content">
+                <h3>AAU team</h3>
+                <p>The only Chinese team in the five major AAU brand leagues</p>
+                <a href="split-html/split/index1.html" class="btn">Learn more</a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="images/微信图片_20241223005536.jpg" alt="DM Sports Agency">
+            <div class="content">
+                <h3>DM Sports Agency</h3>
+                <p>Professional sports management services</p>
+                <a href="AAUteam.html" class="btn">Learn more</a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="images/微信图片_20241223005607.jpg" alt="Training">
+            <div class="content">
+                <h3>Professional Training</h3>
+                <p>Customized training programs</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="images/微信图片_20241223005538.jpg" alt="Events">
+            <div class="content">
+                <h3>Events</h3>
+                <p>Sports events and competitions</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>

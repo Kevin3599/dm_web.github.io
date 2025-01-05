@@ -165,25 +165,84 @@
 <!-- BANNER -->
 
 <!-- 在视频部分后，Our Service 前添加 -->
-<section class="intro" style="background: #f8f8f8; padding: 60px 0;">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
-        <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #333;">DM体育</h2>
-        <div class="intro-text" style="font-size: 1.2em; line-height: 1.6; color: #666; max-width: 800px; margin: 0 auto;">
-            <p>DM是一家专业的体育经纪公司，致力于提供全面的篮球服务，涵盖从球员职业管理到体育留学以及AAU篮球项目</p>
+<section class="founder-message" style="padding: 100px 0; background: #fff; position: relative;">
+    <div class="container" style="max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 60px; padding: 0 20px;">
+        <div class="founder-image" style="flex: 1;">
+            <img src="images/创始人照片.jpg" alt="Founder" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+        </div>
+        <div class="message-content" style="flex: 1;">
+            <h2 style="font-size: 42px; margin-bottom: 30px; color: #333; position: relative;">
+                创始人寄语
+                <span style="content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: #000;"></span>
+            </h2>
+            <div class="message-text" style="font-size: 16px; line-height: 1.8; color: #666;">
+                <p style="margin-bottom: 20px;">作为一家专业的体育经纪公司，DM体育致力于为年轻运动员提供全方位的发展平台。我们深信，每一位怀揣篮球梦想的年轻人都值得获得最好的机会和支持。</p>
+                <p style="margin-bottom: 20px;">通过我们的AAU篮球项目、专业训练营和留学规划，我们帮助运动员在追逐梦想的道路上走得更远。</p>
+                <p>我们不仅是一家体育经纪公司，更是年轻运动员实现梦想的合作伙伴。</p>
+            </div>
+            <div class="signature" style="margin-top: 40px;">
+                <strong style="font-size: 18px; color: #333;">XXX</strong>
+                <p style="color: #666; margin-top: 5px;">DM体育创始人</p>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="container" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
-    <a href="#home" class="logo" style="text-align: center;">
-        <img src="images/logo.png" alt="Logo" style="width: 300px; height: auto;" />
-    </a>
-</div>
+<style>
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    .message-content, .founder-image {
+        width: 100%;
+    }
+    .founder-image {
+        margin-bottom: 40px;
+    }
+}
+</style>
 
-<section class="brands" style="background: #fff; padding: 80px 0;">
+
+<section class="logo-background" style="
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/微信图片_20250104225102.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+">
+<div class="container" style="text-align: center; padding: 40px 20px;">
+    <img src="images/logo.png" alt="DM Sports Logo" style="
+        max-width: 300px;
+        height: auto;
+        transition: transform 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+</div>
+</section>
+
+<section class="brands" style="
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/微信图片_20250104225102.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+">
     <div class="container">
         <h2 style="font-size: 2em; text-align: center; margin-bottom: 50px; color: #333;">合作伙伴</h2>
-        <div class="brand-images" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <div class="brand-images" style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+        ">
             <img src="images/channels4_profile.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
             <img src="images/puma.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
             <img src="images/微信图片_20241227021627.png" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
@@ -201,12 +260,119 @@
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
     }
-    
-    .intro {
-        padding: 40px 20px;
+}
+</style>
+
+<section class="services" style="padding: 80px 0; background: #fff;">
+    <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="text-align: center; font-size: 42px; margin-bottom: 60px; color: #333; font-weight: 600;">Our Services</h2>
+        
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            <!-- 服务卡片1 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="images/image1.jpg" alt="AAU Team" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">AAU Team</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">The only Chinese team in the five major AAU brand leagues</p>
+                    <a href="#" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 服务卡片2 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="images/微信图片_20241223005536.jpg" alt="Sports Agency" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">Sports Agency</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">Professional sports management services</p>
+                    <a href="#" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 服务卡片3 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="images\微信图片_20250103225342.jpg" alt="Training" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">Professional Training</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">Customized training programs</p>
+                    <a href="#" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.service-item:hover img {
+    transform: scale(1.05);
+}
+
+.service-item:hover .overlay a {
+    padding-bottom: 2px;
+    border-bottom-color: transparent;
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
+
+<style>
+.service-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    padding: 30px;
+    color: #fff;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.service-item:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.service-item:hover img {
+    transform: scale(1.05);
+}
+</style>
+
+<!--
+<section class="services" style="padding: 80px 0; background: #fff;">
+    <div class="container" style="max-width: 1400px; margin: 0 auto;">
+        <h2 style="text-align: center; font-size: 36px; margin-bottom: 50px; color: #333;">Our Services</h2>
+        
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;">
+            ...existing code...
+        </div>
+    </div>
+</section>
+-->
 
 <style>
 	.grid-container {
@@ -258,47 +424,20 @@
 	}
 	</style>
 	
-	<section class="services">
-		<div class="grid-container">
-			<div class="grid-item">
-				<img src="images/image1.jpg" alt="AAU Team">
-				<div class="content">
-					<h3>AAU team</h3>
-					<p>The only Chinese team in the five major AAU brand leagues</p>
-					<a href="split-html/split/index1.html" class="btn">Learn more</a>
-				</div>
-			</div>
-			<div class="grid-item">
-				<img src="images/微信图片_20241223005536.jpg" alt="DM Sports Agency">
-				<div class="content">
-					<h3>DM Sports Agency</h3>
-					<p>Professional sports management services</p>
-					<a href="AAUteam.html" class="btn">Learn more</a>
-				</div>
-			</div>
-			<div class="grid-item">
-				<img src="images/微信图片_20241223005607.jpg" alt="Training">
-				<div class="content">
-					<h3>Professional Training</h3>
-					<p>Customized training programs</p>
-					<a href="#" class="btn">Learn more</a>
-				</div>
-			</div>
-			<div class="grid-item">
-				<img src="images/微信图片_20241223005538.jpg" alt="Events">
-				<div class="content">
-					<h3>Events</h3>
-					<p>Sports events and competitions</p>
-					<a href="#" class="btn">Learn more</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
 		<!-- SERVICES -->
-
-
-		
+<style>
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .message-content, .founder-image {
+        width: 100%;
+    }
+    .founder-image {
+        margin-bottom: 40px;
+    }
+}
+</style>
 
 
 
@@ -473,140 +612,62 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-<!-- 在</body>标签前添加以下JavaScript代码 -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    try {
-        // 菜单控制
-        const showMenu = document.querySelector('.showmenu');
-        const hideMenu = document.querySelector('.hidemenu');
-        const nav = document.querySelector('nav');
+$(document).ready(function() {
+    // 导航菜单处理
+    const showMenu = $('.showmenu');
+    const hideMenu = $('.hidemenu');
+    const nav = $('nav');
+    
+    showMenu.on('click', function(e) {
+        e.preventDefault();
+        nav.addClass('active').css({
+            'transform': 'translateX(0)',
+            'opacity': '1',
+            'transition': 'all 0.3s ease'
+        });
+        hideMenu.css('visibility', 'visible');
+    });
+    
+    hideMenu.on('click', function(e) {
+        e.preventDefault();
+        nav.removeClass('active').css({
+            'transform': 'translateX(-100%)',
+            'opacity': '0'
+        });
+        $(this).css('visibility', 'hidden');
+    });
+    
+    // 页面滚动处理
+    $(window).on('scroll', function() {
+        const scrollTop = $(this).scrollTop();
         
-        if (showMenu && hideMenu && nav) {
-            showMenu.addEventListener('click', function(e) {
-                e.preventDefault();
-                nav.classList.add('active');
-            });
-            
-            hideMenu.addEventListener('click', function(e) {
-                e.preventDefault();
-                nav.classList.remove('active');
-            });
+        // 导航栏固定
+        if(scrollTop > 100) {
+            $('header').addClass('fixed');
+        } else {
+            $('header').removeClass('fixed');
         }
         
-        // 添加相应的CSS样式
-        const style = document.createElement('style');
-        style.textContent = `
-            nav { 
-                display: none; 
+        // 导航项高亮
+        $('.nav-item').each(function() {
+            const target = $($(this).attr('href'));
+            if(target.length && scrollTop >= target.offset().top - 100) {
+                $('.nav-item').removeClass('active');
+                $(this).addClass('active');
             }
-            nav.active { 
-                display: block; 
-            }
-            @media (max-width: 768px) {
-                nav {
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    background: white;
-                    width: 100%;
-                    height: 100vh;
-                    padding: 2rem;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-        
-    } catch (error) {
-        console.error('Menu initialization error:', error);
-    }
+        });
+    });
+    
+    // 平滑滚动
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $($(this).attr('href'));
+        if(target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 80
+            }, 800);
+        }
+    });
 });
 </script>
-<!-- Template By: LayoutFlow, URL: https://layoutflow.com/  -->
-
-<style>
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-    max-width: 1400px;
-    margin: 0 auto;
-    background: #fff;
-}
-
-.grid-item {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1/1;
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.grid-item:hover img {
-    transform: scale(1.05);
-}
-
-.grid-item .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.grid-item:hover .content {
-    opacity: 1;
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-
-<section class="services">
-    <div class="grid-container">
-        <div class="grid-item">
-            <img src="images/image1.jpg" alt="AAU Team">
-            <div class="content">
-                <h3>AAU team</h3>
-                <p>The only Chinese team in the five major AAU brand leagues</p>
-                <a href="split-html/split/index1.html" class="btn">Learn more</a>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="images/微信图片_20241223005536.jpg" alt="DM Sports Agency">
-            <div class="content">
-                <h3>DM Sports Agency</h3>
-                <p>Professional sports management services</p>
-                <a href="AAUteam.html" class="btn">Learn more</a>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="images/微信图片_20241223005607.jpg" alt="Training">
-            <div class="content">
-                <h3>Professional Training</h3>
-                <p>Customized training programs</p>
-                <a href="#" class="btn">Learn more</a>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="images/微信图片_20241223005538.jpg" alt="Events">
-            <div class="content">
-                <h3>Events</h3>
-                <p>Sports events and competitions</p>
-                <a href="#" class="btn">Learn more</a>
-            </div>
-        </div>
-    </div>
-</section>

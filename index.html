@@ -16,6 +16,29 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<script src="js/jquery.js"></script>
 		<script src="form/form.js"></script>
+		<style>
+		.language-switch {
+			position: fixed;
+			top: 20px;
+			left: 20px;  /* 改为左对齐 */
+			z-index: 1000;
+		}
+		.language-btn {
+			background: rgba(255,255,255,0.9);
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		.language-btn:hover {
+			background: rgba(255,255,255,1);
+			transform: translateY(-2px);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+		}
+		</style>
 	</head>
 
 
@@ -171,24 +194,61 @@
             <img src="images/创始人照片.jpg" alt="Founder" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
         </div>
         <div class="message-content" style="flex: 1;">
-            <h2 style="font-size: 42px; margin-bottom: 30px; color: #333; position: relative;">
+            <h2 data-i18n="founder-title" style="font-size: 42px; margin-bottom: 30px; color: #333; position: relative;">
                 创始人介绍
                 <span style="content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: #000;"></span>
             </h2>
             <div class="message-text" style="font-size: 16px; line-height: 1.8; color: #666;">
-            </div>
-            <div class="message-text" style="font-size: 16px; line-height: 1.8; color: #666;">
-                <p style="margin-bottom: 20px;">窦子昂，DM Sports Agency创始人兼首席球员经纪人，2024年创立该公司。作为中国篮球经纪行业的先锋，窦子昂致力于推动中国篮球与国际篮球的深度融合。他敏锐的洞察力与丰富的资源，使他成为众多中国篮球运动员追逐职业梦想的重要引路人。</p>
-                
-                <p style="margin-bottom: 20px;">在创立DM Sports Agency的同时，窦子昂还创办了中国首个AAU项目——China Elite。这一项目的设立旨在为中国青少年篮球运动员提供一个与国际高水平选手同台竞技的机会，帮助他们开拓视野、提升实力，为进入更高水平的篮球平台奠定基础。China Elite不仅填补了国内AAU项目的空白，还以其高质量的赛事组织和全面的球员培养计划受到业内高度评价。</p>
+                <p data-i18n="founder-p1" style="margin-bottom: 20px;">窦子昂，DM Sports Agency创始人兼首席球员经纪人，2024年创立该公司。作为中国篮球经纪行业的先锋，窦子昂致力于推动中国篮球与国际篮球的深度融合。他敏锐的洞察力与丰富的资源，使他成为众多中国篮球运动员追逐职业梦想的重要引路人。</p>
+                <p data-i18n="founder-p2" style="margin-bottom: 20px;">在创立DM Sports Agency的同时，窦子昂还创办了中国首个AAU项目——China Elite。这一项目的设立旨在为中国青少年篮球运动员提供一个与国际高水平选手同台竞技的机会，帮助他们开拓视野、提升实力，为进入更高水平的篮球平台奠定基础。China Elite不仅填补了国内AAU项目的空白，还以其高质量的赛事组织和全面的球员培养计划受到业内高度评价。</p>
             </div>
             <div class="signature" style="margin-top: 40px;">
-                <strong style="font-size: 18px; color: #333;">窦子昂</strong>
-                <p style="color: #666; margin-top: 5px;">DM体育创始人</p>
+                <strong data-i18n="founder-name" style="font-size: 18px; color: #333;">窦子昂</strong>
+                <p data-i18n="founder-position" style="color: #666; margin-top: 5px;">DM体育创始人</p>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+const translations = {
+    'en': {
+        'founder-title': 'Founder Introduction',
+        'founder-p1': 'Dou Ziang, founder and chief player agent of DM Sports Agency, established the company in 2024. As a pioneer in China\'s basketball agency industry, Dou is committed to promoting deep integration between Chinese and international basketball. His keen insight and rich resources have made him an important guide for many Chinese basketball players pursuing their professional dreams.',
+        'founder-p2': 'While establishing DM Sports Agency, Dou also founded China\'s first AAU program—China Elite. This project aims to provide Chinese youth basketball players with an opportunity to compete with high-level international players, helping them broaden their horizons, enhance their strength, and lay the foundation for entering higher-level basketball platforms. China Elite not only fills the gap of domestic AAU projects but also has received high industry recognition for its high-quality event organization and comprehensive player development programs.',
+        'founder-name': 'Dou Ziang',
+        'founder-position': 'Founder of DM Sports'
+    },
+    'zh': {
+        'founder-title': '创始人介绍',
+        'founder-p1': '窦子昂，DM Sports Agency创始人兼首席球员经纪人，2024年创立该公司。作为中国篮球经纪行业的先锋，窦子昂致力于推动中国篮球与国际篮球的深度融合。他敏锐的洞察力与丰富的资源，使他成为众多中国篮球运动员追逐职业梦想的重要引路人。',
+        'founder-p2': '在创立DM Sports Agency的同时，窦子昂还创办了中国首个AAU项目——China Elite。这一项目的设立旨在为中国青少年篮球运动员提供一个与国际高水平选手同台竞技的机会，帮助他们开拓视野、提升实力，为进入更高水平的篮球平台奠定基础。China Elite不仅填补了国内AAU项目的空白，还以其高质量的赛事组织和全面的球员培养计划受到业内高度评价。',
+        'founder-name': '窦子昂',
+        'founder-position': 'DM体育创始人'
+    }
+};
+
+let currentLang = 'zh';
+
+function switchLanguage() {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    updateContent();
+}
+
+function updateContent() {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+            element.textContent = translations[currentLang][key];
+        }
+    });
+}
+
+// 初始化页面文本
+document.addEventListener('DOMContentLoaded', () => {
+    updateContent();
+});
+</script>
 
 <style>
 @media (max-width: 992px) {
@@ -203,7 +263,6 @@
     }
 }
 </style>
-
 
 <section class="logo-background" style="
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/微信图片_20250104225102.jpg');
@@ -538,6 +597,51 @@
 }
 </style>
 
+<!-- 添加语言切换按钮 -->
+<div class="language-switch">
+    <button class="language-btn" onclick="switchLanguage()">
+        <span class="lang-text">中文/EN</span>
+    </button>
+</div>
+
+<script>
+const translations = {
+    'en': {
+        'title': 'DM Sports Agency',
+        'subtitle': 'We make you opportunities',
+        'learnMore': 'Learn more',
+        'founder-title': 'Founder Introduction',
+        'founder-text-1': 'Dou Ziang, founder and chief player agent of DM Sports Agency, established the company in 2024. As a pioneer in China\'s basketball agency industry, Dou is committed to promoting deep integration between Chinese and international basketball. His keen insight and rich resources have made him an important guide for many Chinese basketball players pursuing their professional dreams.',
+        'founder-text-2': 'While establishing DM Sports Agency, Dou also founded China\'s first AAU program—China Elite. This project aims to provide Chinese youth basketball players with an opportunity to compete with high-level international players, helping them broaden their horizons, enhance their strength, and lay the foundation for entering higher-level basketball platforms. China Elite not only fills the gap of domestic AAU projects but also has received high industry recognition for its high-quality event organization and comprehensive player development programs.',
+        'founder-name': 'Dou Ziang',
+        'founder-position': 'Founder of DM Sports'
+    },
+    'zh': {
+        'title': 'DM体育经纪公司',
+        'subtitle': '为你创造机会',
+        'learnMore': '了解更多',
+        'founder-title': '创始人介绍',
+        'founder-text-1': '窦子昂，DM Sports Agency创始人兼首席球员经纪人，2024年创立该公司。作为中国篮球经纪行业的先锋，窦子昂致力于推动中国篮球与国际篮球的深度融合。他敏锐的洞察力与丰富的资源，使他成为众多中国篮球运动员追逐职业梦想的重要引路人。',
+        'founder-text-2': '在创立DM Sports Agency的同时，窦子昂还创办了中国首个AAU项目——China Elite。这一项目的设立旨在为中国青少年篮球运动员提供一个与国际高水平选手同台竞技的机会，帮助他们开拓视野、提升实力，为进入更高水平的篮球平台奠定基础。China Elite不仅填补了国内AAU项目的空白，还以其高质量的赛事组织和全面的球员培养计划受到业内高度评价。',
+        'founder-name': '窦子昂',
+        'founder-position': 'DM体育创始人'
+    }
+};
+
+let currentLang = 'en';
+
+function switchLanguage() {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    updateContent();
+}
+
+function updateContent() {
+    document.querySelector('h1').textContent = translations[currentLang].title;
+    document.querySelector('h3').textContent = translations[currentLang].subtitle;
+    document.querySelector('.btn').textContent = translations[currentLang].learnMore;
+    // 更新其他文本内容
+}
+</script>
 
 		<script>
 			let getshowmenu = document.getElementsByClassName('showmenu')[0];

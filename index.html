@@ -358,6 +358,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="training.html" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
                 </div>
             </div>
+
+            <!-- 服务卡片4 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: auto; height: auto;">
+                <img src="images\contract player.jpg" alt="College Recruitment" style="transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">Contracted player</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">Professional management for contracted players.</p>
+                    <a href="college.html" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 服务卡片5 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: auto; height: auto;">
+                <img src="images\Commercial activity.png" alt="International Competition" style="transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">Commercial activity</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">Global basketball Commercial activity</p>
+                    <a href="competition.html" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
+            <!-- 服务卡片6 -->
+            <div class="service-item" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: auto; height: auto;">
+                <img src="images\创始人照片.jpg" alt="International Competition" style="transition: transform 0.5s ease;">
+                <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 30px; color: #fff;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px; font-weight: 500;">To be continued</h3>
+                    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">To be continued</p>
+                    <a href="competition.html" style="color: #fff; text-decoration: none; font-size: 14px; border-bottom: 2px solid #fff; padding-bottom: 5px; transition: all 0.3s ease;">Learn More →</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -376,6 +405,21 @@ document.addEventListener('DOMContentLoaded', () => {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<style>
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {

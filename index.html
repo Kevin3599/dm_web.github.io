@@ -265,23 +265,21 @@ document.addEventListener('DOMContentLoaded', () => {
 </style>
 
 <section class="logo-background" style="
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/微信图片_20250104225102.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: none;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    padding: 0;
 ">
-<div class="container" style="text-align: center; padding: 40px 20px;">
-    <img src="images/logo.png" alt="DM Sports Logo" style="
-        max-width: 300px;
-        height: auto;
-        transition: transform 0.3s ease;
-    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-</div>
+    <div class="container" style="text-align: center; padding: 0;">
+        <img src="images/logo.png" alt="DM Sports Logo" style="
+            max-width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
 </section>
 
 <section class="brands" style="
@@ -296,30 +294,25 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="brand-images" style="
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
+            gap: 0;
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 10px;
         ">
-            <img src="images/7b400c5f0eeb03b374b1b4b50726a23.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
-            <img src="images/f7b66835a1694fae566f7d58bccf209.png" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
-            <img src="images/微信图片_20241227021627.png" alt="" style="width: 100%; max-width: 200px; margin: 0 auto; transition: transform 0.3s;">
+            <img src="images/7b400c5f0eeb03b374b1b4b50726a23.jpg" alt="" style="width: 100%; max-width: 200px; margin: 0; display: block; border: none; transition: transform 0.3s;">
+            <img src="images/f7b66835a1694fae566f7d58bccf209.png" alt="" style="width: 100%; max-width: 200px; margin: 0; display: block; border: none; transition: transform 0.3s;">
+            <img src="images/微信图片_20241227021627.png" alt="" style="width: 100%; max-width: 200px; margin: 0; display: block; border: none; transition: transform 0.3s;">
         </div>
     </div>
 </section>
-
 <style>
 .brand-images img:hover {
     transform: scale(1.1);
 }
-
 @media (max-width: 768px) {
     .brand-images {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
+        gap: 0;
     }
 }
 </style>
